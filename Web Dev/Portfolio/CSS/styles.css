@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap');
-#menu_toggle {
+/* #menu_toggle {
     opacity:0;
   }
   
@@ -78,7 +78,8 @@
   
   .menu_item:hover {
   background-color: #cfd8dc;
-  }
+  } */
+
 
 body {
     margin: 0;
@@ -228,12 +229,65 @@ h3 {
   }
 
   .social {
-    background-color: #66bfbf;
-    margin-top: 100px;
+    background-color: #333;
+    
     padding: 50px 0 20px;
   }
 
   @media (min-width: 730px) {
-  
-  
+    
+    .menu {
+        text-align: center;
+        background-color: #333;
+        width: 10rem;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: auto;
+        bottom: 0;
+        display: flex;
+        z-index: 3;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        -webkit-box-pack: justify;
+        
+
+        
+    } 
+    .logo-container {
+        background-color: #222121;
+        padding: 10px 0;
+    }
+
+   .menuLogo {
+        background-color: #222121;
+        margin: 30px;
+        display: flex;
+       flex-direction: column;
+       -webkit-box-align: center;
+       -webkit-box-pack: center;
+
+   }
+
+   .menu_box{
+    padding: 100px 0;
+   }
+
+   .menu_item {
+        margin: 15px 0;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+        
+   }
+
+   .social {
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    /* padding: 50px 0 20px; */
+  }
 }

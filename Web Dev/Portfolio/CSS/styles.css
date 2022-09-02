@@ -118,7 +118,7 @@ h2 {
 a {
     color:#11999E;   
     font-family: 'Montserrat', sans-serif;
-    margin: 10px 20px;
+    /* margin: 10px 20px; */
     text-decoration: none;
 }
 
@@ -262,24 +262,45 @@ h3 {
 
    .menuLogo {
         background-color: #222121;
-        margin: 30px;
+        margin: 30px 30px 10px;
         display: flex;
        flex-direction: column;
        -webkit-box-align: center;
        -webkit-box-pack: center;
 
    }
+   
+   .imglogo {
+    width: 100px;
+    height: auto;
+    
+   }
+
+   .logo_name {
+    display: flex;
+    text-align: center;
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+    color: #EAf6f6;
+   }
 
    .menu_box{
-    padding: 100px 0;
+    margin: 100px 0;
    }
 
    .menu_item {
-        margin: 15px 0;
+        display: grid;
+        margin-top: -1px;
+        columns: 100%;
+        column-gap: 20px;
         width: 100%;
+        height: 50px;
         background-color: #333;
         text-align: center;
-        
+        border-top: 1px solid #30E3cb;
+        border-bottom: 1px solid #30E3cb;
+        align-items: center;
    }
 
    .social {

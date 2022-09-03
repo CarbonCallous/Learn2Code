@@ -89,7 +89,7 @@ body {
 }
 
 h1 {
-    margin: 50px auto 0 auto;
+    /* margin: 50px auto 0 auto; */
     color: #66bfbf;
     font-family: 'Sacramento', cursive;
     font-size: 5.625rem;
@@ -118,36 +118,17 @@ h2 {
 a {
     color:#11999E;   
     font-family: 'Montserrat', sans-serif;
-    /* margin: 10px 20px; */
     text-decoration: none;
 }
 
-a:hover {
-    color: #EAf6f6;
-}
+
 
 h3 {
     font-family: 'Montserrat', sans-serif;
     color: #11999E;
 }
 
-.top {
-    background-color: #333;
-    position: relative;
-    padding-top: 100px;
-}
 
-.top-cloud{
-    position: absolute;
-    right: 300px;
-    top: 40px;
-}
-
-.bottom-cloud{
-    position:absolute;
-    left: 250px;
-    bottom: 300px;
-}
 
 .profile-pic{
     height: 200px;
@@ -205,7 +186,7 @@ h3 {
     background: #11cdd4;
     background-image: -webkit-linear-gradient(top, #11cdd4, #11999E);
     background-image: -moz-linear-gradient(top, #11cdd4, #11999E);
-    background-image: -ms-linear-gradient(top, #11cdd4, #11999E);
+    background-image: linear-gradient(top, #11cdd4, #11999E);
     background-image: -o-linear-gradient(top, #11cdd4, #11999E);
     background-image: linear-gradient(to bottom, #11cdd4, #11999E);
     -webkit-border-radius: 8;
@@ -222,7 +203,7 @@ h3 {
     background: #30E3cb;
     background-image: -webkit-linear-gradient(top, #30E3cb, #2bc4ad);
     background-image: -moz-linear-gradient(top, #30E3cb, #2bc4ad);
-    background-image: -ms-linear-gradient(top, #30E3cb, #2bc4ad);
+    background-image: linear-gradient(top, #30E3cb, #2bc4ad);
     background-image: -o-linear-gradient(top, #30E3cb, #2bc4ad);
     background-image: linear-gradient(to bottom, #30E3cb, #2bc4ad);
     text-decoration: none;
@@ -262,11 +243,11 @@ h3 {
 
    .menuLogo {
         background-color: #222121;
-        margin: 30px 30px 10px;
+        margin: 10px 30px 10px;
         display: flex;
-       flex-direction: column;
-       -webkit-box-align: center;
-       -webkit-box-pack: center;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -webkit-box-pack: center;
 
    }
    
@@ -278,10 +259,11 @@ h3 {
 
    .logo_name {
     display: flex;
-    text-align: center;
+    
     font-size: 2rem;
-    padding: 0;
-    margin: 0;
+    padding-left: 5px;
+    margin-top: -15px;
+    margin-bottom: 5px;
     color: #EAf6f6;
    }
 
@@ -303,12 +285,20 @@ h3 {
         align-items: center;
    }
 
+   .menu_item:hover {
+        color: #333;
+        background: 
+        linear-gradient(white 0 0) 20% /2px 100%,
+        linear-gradient(white 0 0) 25% /2px 100%,
+        
+        linear-gradient(80deg,#0052D4, silver, #9CECFB, #65C7F7);
+        background-repeat:no-repeat;
+   }
+
    .social {
     background-color: #333;
     display: flex;
     flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-box-pack: center;
-    /* padding: 50px 0 20px; */
+    
   }
 }

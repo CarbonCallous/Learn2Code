@@ -82,8 +82,6 @@
 
 
 body {
-    margin: 0;
-    text-align: center;
     font-family: 'Merriweather', serif;
     color: #333;
 }
@@ -105,7 +103,7 @@ hr {
     border: dotted #EAEBED 6px;
     border-bottom: none;
     width: 4%;
-    margin: 100px auto;
+    margin: 100px 25%;
 }
 
 h2 {
@@ -134,13 +132,13 @@ h3 {
 .profile-pic{
     height: 200px;
     width: 200px;
-    margin-top: 50px;
+    margin: 1% 1%;
 }
 
 .skill-row{
     width: 50%;
     position:relative;
-    margin: 100px auto 100px auto;
+    margin: 5% 1%;
     text-align: left;
     line-height: 2;
     
@@ -154,19 +152,14 @@ h3 {
 }
 
 .intro {
-    width: 30%;
-    margin: auto;
-}
-
-.chilli-img{
-    width: 20%;
-    float: right;
-    margin-left: 30px;
+    width: 50%;
+    margin-left: 1%;
+    
 }
 
 .contact-message {
     width: 40%;
-    margin: 40px auto 60px;
+    margin: 40px 1%;
 }
 
 .copyright {
@@ -183,10 +176,22 @@ h3 {
 
   @media (min-width: 730px) {
 
+
     body {
       background-color: #2e424d;
+      /* text-align: center; */
+      display: block;
+      margin-left: 250px;
+      
+      
     }
+    .top-container {
+      margin-top: 11%;
+      width: 50%;
+      margin-bottom: 10%;
     
+
+  }
     .menu {
         text-align: center;
         background-color: #333;;
@@ -258,12 +263,14 @@ h3 {
    .menu_item:hover {
         color: #EAEBED;
         background: linear-gradient(80deg,#2e424d, #5b8291, #98dad9);
+        animation: forwards;
         
    }
 
    .social {
     background-color: #333;
-    padding: 50px 0 20px;   
+    padding: 50px 0 20px;  
+    
     
   }
 
@@ -294,7 +301,5 @@ h3 {
   }
   }
 
-  .top-container {
-
-  }
+  
 }

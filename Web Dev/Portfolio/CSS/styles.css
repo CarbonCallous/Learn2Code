@@ -90,7 +90,7 @@ body {
 
 h1 {
     /* margin: 50px auto 0 auto; */
-    color: #66bfbf;
+    color: #98dad9;
     font-family: 'Sacramento', cursive;
     font-size: 5.625rem;
         
@@ -98,10 +98,11 @@ h1 {
 
 p {
     line-height: 2;
+    color: whitesmoke;
 }
 
 hr {
-    border: dotted #EAf6f6 6px;
+    border: dotted #EAEBED 6px;
     border-bottom: none;
     width: 4%;
     margin: 100px auto;
@@ -110,13 +111,13 @@ hr {
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
-    color: #66bfbf;
+    color: #98dad9;
     font-weight: normal;
     padding-bottom: 10px;
 }
 
 a {
-    color:#11999E;   
+    color:#98dad9;   
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
 }
@@ -125,7 +126,7 @@ a {
 
 h3 {
     font-family: 'Montserrat', sans-serif;
-    color: #11999E;
+    color: #98dad9;
 }
 
 
@@ -168,58 +169,27 @@ h3 {
     margin: 40px auto 60px;
 }
 
-.middle {
-   margin: 100px 0;
-}
-
- 
 .copyright {
     color: #EAf6f6;
     font-size: 0.75rem;
     padding: 20px 0;
 }
 
-.pro {
-    text-decoration: underline;
-}
-.btn {
-    background: #11cdd4;
-    background-image: -webkit-linear-gradient(top, #11cdd4, #11999E);
-    background-image: -moz-linear-gradient(top, #11cdd4, #11999E);
-    background-image: linear-gradient(top, #11cdd4, #11999E);
-    background-image: -o-linear-gradient(top, #11cdd4, #11999E);
-    background-image: linear-gradient(to bottom, #11cdd4, #11999E);
-    -webkit-border-radius: 8;
-    -moz-border-radius: 8;
-    border-radius: 8px;
-    font-family: 'Montserrat';
-    color: #ffffff;
-    font-size: 20px;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-  }
-  
-  .btn:hover {
-    background: #30E3cb;
-    background-image: -webkit-linear-gradient(top, #30E3cb, #2bc4ad);
-    background-image: -moz-linear-gradient(top, #30E3cb, #2bc4ad);
-    background-image: linear-gradient(top, #30E3cb, #2bc4ad);
-    background-image: -o-linear-gradient(top, #30E3cb, #2bc4ad);
-    background-image: linear-gradient(to bottom, #30E3cb, #2bc4ad);
-    text-decoration: none;
-  }
-
-  .social {
+.social {
     background-color: #333;
     
     padding: 50px 0 20px;
   }
 
   @media (min-width: 730px) {
+
+    body {
+      background-color: #2e424d;
+    }
     
     .menu {
         text-align: center;
-        background-color: #333;
+        background-color: #333;;
         width: 10rem;
         position: fixed;
         left: 0;
@@ -264,7 +234,7 @@ h3 {
     padding-left: 5px;
     margin-top: -15px;
     margin-bottom: 5px;
-    color: #EAf6f6;
+    color: #EAEBED;
    }
 
    .menu_box{
@@ -280,25 +250,51 @@ h3 {
         height: 50px;
         background-color: #333;
         text-align: center;
-        border-top: 1px solid #30E3cb;
-        border-bottom: 1px solid #30E3cb;
+        border-top: 1px solid #98dad9;
+        border-bottom: 1px solid #98dad9;
         align-items: center;
    }
 
    .menu_item:hover {
-        color: #333;
-        background: 
-        linear-gradient(white 0 0) 20% /2px 100%,
-        linear-gradient(white 0 0) 25% /2px 100%,
+        color: #EAEBED;
+        background: linear-gradient(80deg,#2e424d, #5b8291, #98dad9);
         
-        linear-gradient(80deg,#0052D4, silver, #9CECFB, #65C7F7);
-        background-repeat:no-repeat;
    }
 
    .social {
     background-color: #333;
-    display: flex;
-    flex-direction: column;
+    padding: 50px 0 20px;   
     
+  }
+
+  .linkedin {
+    padding: 6px;
+    display: inline-block; 
+    animation: float 5s ease-in-out infinite;
+  }
+
+  .github {
+    display: inline-block; 
+    animation: float 5s ease-in-out infinite;
+    animation-delay: 1s;
+    padding: 6px;
+  }
+
+  @keyframes float {
+    0%{
+      transform: translateY(0);
+    }
+    50%{
+      transform: translateY(-15px);
+    }
+    100%{
+      transform: translateY(0);
+    }
+    
+  }
+  }
+
+  .top-container {
+
   }
 }

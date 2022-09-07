@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap');
-/* #menu_toggle {
+#menu_toggle {
     opacity:0;
   }
   
@@ -78,12 +78,16 @@
   
   .menu_item:hover {
   background-color: #cfd8dc;
-  } */
+  }
 
 
 body {
     font-family: 'Merriweather', serif;
-    color: #333;
+    color: #2e424d;
+}
+
+.logo-container{
+  visibility: hidden;
 }
 
 h1 {

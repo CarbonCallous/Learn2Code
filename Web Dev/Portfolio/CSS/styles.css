@@ -196,7 +196,7 @@ h3 {
   padding: 20px 0;
 }
 
-@media (min-width: 450px) {
+@media screen and (min-width: 500px) {
   body {
    margin-left: 250px;
   }
@@ -282,7 +282,7 @@ h3 {
     animation: forwards;
   }
   .menu_btn {
-    display: none;
+    visibility: hidden;
   }
 
   .social {

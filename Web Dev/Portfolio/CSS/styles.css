@@ -5,20 +5,25 @@
 #menu__toggle {
   opacity: 0;
 }
-#menu__toggle:checked + .menu__btn > span {
+
+#menu__toggle:checked+.menu__btn>span {
   transform: rotate(45deg);
 }
-#menu__toggle:checked + .menu__btn > span::before {
+
+#menu__toggle:checked+.menu__btn>span::before {
   top: 0;
   transform: rotate(0deg);
 }
-#menu__toggle:checked + .menu__btn > span::after {
+
+#menu__toggle:checked+.menu__btn>span::after {
   top: 0;
   transform: rotate(90deg);
 }
-#menu__toggle:checked ~ .menu__box {
+
+#menu__toggle:checked~.menu__box {
   right: 0 !important;
 }
+
 .menu__btn {
   position: fixed;
   top: 20px;
@@ -28,9 +33,10 @@
   cursor: pointer;
   z-index: 3;
 }
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
   display: block;
   position: absolute;
   width: 100%;
@@ -38,14 +44,17 @@
   background-color: black;
   transition-duration: 0.25s;
 }
-.menu__btn > span::before {
+
+.menu__btn>span::before {
   content: "";
   top: -8px;
 }
-.menu__btn > span::after {
+
+.menu__btn>span::after {
   content: "";
   top: 8px;
 }
+
 .menu__box {
   display: flex;
   flex-direction: column;
@@ -62,6 +71,7 @@
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
   transition-duration: 0.5s;
 }
+
 .menu_item_img {
   display: flex;
   justify-content: center;
@@ -74,6 +84,7 @@
   margin: 0 auto;
   padding-bottom: 0;
 }
+
 .logo_name {
   background-color: #222121;
   color: #eaebed;
@@ -84,6 +95,7 @@
   margin-top: 0;
   padding-bottom: 1rem;
 }
+
 .menu__item {
   display: block;
   padding: 12px 24px;
@@ -101,6 +113,7 @@
   background: linear-gradient(80deg, #2e424d, #5b8291, #98dad9);
   animation: forwards;
 }
+
 .social {
   display: flex;
   flex-direction: row;
@@ -196,11 +209,15 @@ h3 {
   padding: 20px 0;
 }
 
+@media screen (min-width:200px) {
+  background-color: red;
+}
+
 @media screen and (min-width: 500px) {
   body {
-   margin-left: 250px;
+    margin-left: 250px;
   }
-  
+
   .menu {
     text-align: center;
     background-color: #333;
@@ -217,6 +234,7 @@ h3 {
     flex-direction: column;
     -webkit-box-pack: justify;
   }
+
   .logo-container {
     background-color: #222121;
     padding: 10px 0;
@@ -260,7 +278,7 @@ h3 {
   }
 
   .menu_item {
-    
+
     display: inline-block;
     padding: 5px 0;
     color: #98dad9;
@@ -281,6 +299,7 @@ h3 {
     background: linear-gradient(80deg, #2e424d, #5b8291, #98dad9);
     animation: forwards;
   }
+
   .menu_btn {
     visibility: hidden;
   }
@@ -311,9 +330,11 @@ h3 {
     0% {
       transform: translateY(0);
     }
+
     50% {
       transform: translateY(-15px);
     }
+
     100% {
       transform: translateY(0);
     }

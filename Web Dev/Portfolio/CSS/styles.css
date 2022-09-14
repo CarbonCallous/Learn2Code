@@ -191,7 +191,7 @@ h3 {
   margin: 5% 1%;
   text-align: left;
   line-height: 2;
-  z-index: 0;
+  z-index: 1;
 }
 
 .computer-img {

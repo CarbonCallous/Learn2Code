@@ -115,12 +115,17 @@
 }
 
 .social {
+  margin-top: 40px;
   display: flex;
   flex-direction: row;
   row-gap: 20px;
   position: relative;
   justify-content: center;
   padding: 5px;
+}
+
+.linkedin {
+  margin-right: 10px;
 }
 
 body {
@@ -226,6 +231,7 @@ h3 {
 @media screen and (min-width: 900px) {
   body {
     margin-left: 10rem;
+    padding-left: 1rem;
     }
 
     .menu__btn {
